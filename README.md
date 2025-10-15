@@ -1,5 +1,9 @@
 # Taller AWS Lambda & Gateway Services en Java
 
+#### Video del funcionamiento
+
+El video `APIGateway_Tests.mp4` (Almacenado en este mismo repositorio) contiene una prueba del correcto funcionamiento del taller.
+
 ### Crear la clase y método que implementa el servicio
 
 *Para crear el servicio creamos un proyecto java con maven. En el proyecto implementamos una clase que implementa un método estático que reciba un entero y que retorne el cuadrado del mismo. Usamos este ejemplo simple para evitar dependencias innecesarias y para que la persona que lea el tutorial pueda ver la mecánica de las funciones lambda.*
