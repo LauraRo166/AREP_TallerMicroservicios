@@ -168,3 +168,78 @@ Intente invocarlo con una URL como esta (no olvide el parámetro):
 Y deberá obtener una resultado com este:*
 
 ![testURLValue.png](img/testURLValue.png)
+
+### Parte 2 del Taller
+
+Creamos las siguientes clases:
+
+````java
+package co.edu.escuelaing.lambda;
+
+public class SecurityUtils {
+    public static User login(User u){
+        System.out.println("Username: " + u.getUsername());
+        System.out.println("password: " + u.getPassword());
+        u.setPassword("");
+        return u;
+    }
+}
+````
+
+````java
+package co.edu.escuelaing.lambda;
+
+class User {
+    
+    private String username;
+    private String password;
+    
+    public User(){}
+
+    /**
+     * @return the username
+     */
+    public String getUsername() {
+        return username;
+    }
+
+    /**
+     * @param username the username to set
+     */
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    /**
+     * @return the password
+     */
+    public String getPassword() {
+        return password;
+    }
+
+    /**
+     * @param password the password to set
+     */
+    public void setPassword(String password) {
+        this.password = password;
+    }
+    
+    
+}
+````
+
+Compilamos y verificamos que se hayan creado los siguientes archivos:
+
+![Parte2Compilar.png](img/Parte2Compilar.png)
+
+Creamos la función lambda como se hizo en la parte anterior del taller y realizamos una prueba:
+
+![testParte2.png](img/testParte2.png)
+
+Repetimos el proceso para crear el método en la api gateway:
+
+![loginAPI.png](img/loginAPI.png)
+
+Lo configuramos como hicimos en la parte anterior y probamos:
+
+![testLogin.png](img/testLogin.png)
